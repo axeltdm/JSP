@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>.container {
-    display: flex;
-    justify-content: space-between;
-    float: right;
-  }</style>
+<style>#hide {
+    display: none;
+    font-size: 40px;
+    color: blue;
+    background: black;
+    padding: 20px;
+}</style>
 <body>
+    <h1>Submit your JavaScript code to me at...</h1>
+    <h1 id=hide>axelriggsgamer@gmail.com</h1>
+    <button onclick="email()">Click me</button>
+<script>
+function email() {
+    var link = window.document.getElementById('hide');
+        link.style.display = "block";
+}</script>
     <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
